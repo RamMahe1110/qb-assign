@@ -1,0 +1,140 @@
+// imports => base
+@import './sass/base/base';
+@import './sass/base/typography';
+@import './sass/base/utilities';
+
+// imports => pages
+@import './sass/pages/premium';
+
+// imports => components
+@import './sass/components/main-nav';
+
+.container {
+  max-width: 120rem;
+  margin: auto;
+  width: 90%;
+}
+
+.premium {
+  .hero-section {
+    background: url('https://static.grammarly.com/assets/files/e11d695bf3f6eebab567fb18e0a4b906/swoosh.jpg');
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    .single-hero-feature {
+      .single-hero-cont {
+        position: relative;
+        min-height: 95vh;
+        z-index: 1;
+        .indi-spec {
+          position: absolute;
+          width: 50%;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          padding: 0rem 6rem;
+          .short-title-cont {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3rem;
+            .icon-cont {
+              margin-right: 1rem;
+            }
+            .short-title {
+              font-weight: 700;
+              font-size: 1.7rem;
+            }
+            
+          }
+          .heading-indi-spec {
+            margin-bottom: 2rem;
+            font-size: 4rem;
+            line-height: 1.4;
+          }
+          .desc {
+            margin-bottom: 2.5rem;
+          }
+        }
+      }
+    }
+    .sticky-info-card {
+      z-index: 10;
+      background: #fff;
+      max-width: 60rem;
+      padding: 0rem 0;
+      position: sticky;
+      float: left;
+      width: 90%;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%);
+      padding: 6rem 8rem 10rem 8rem;
+      border-radius: 1.5rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      .text {
+        margin-bottom: 4rem;
+        font-size: 1.8rem;
+        line-height: 2.3;
+      }
+      .text:nth-child(4) {
+        margin-bottom: 0;
+      }
+      .dots {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 4.5rem;
+        .dot {
+          display: block;
+          width: 0.5rem;
+          height: 0.5rem;
+          background: rgb(220, 220, 220);
+          color: rgb(220, 220, 220);
+          margin-right: 3px;
+          padding: 5px;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:first-child {
+            color: rgb(175, 175, 175);
+            background: rgb(175, 175, 175);
+          }
+        }
+      }
+      .bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 5.5rem;
+        height: 5.5rem;
+        position: absolute;
+        bottom: 2rem;
+        right: 3rem;
+        border: 5px solid rgb(220, 220, 220);
+        border-radius: 50px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        .percent-bar {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: calc(100% + 10px);
+          height: calc(100% + 10px);
+          border-radius: 50px;
+          color: #fff;
+          border: 5px solid red;
+          transform: translate(-5px, -5px);
+        }
+      }
+    }
+  }
+  .random {
+    height: 200vh;
+    background: blue;
+  }
+}
